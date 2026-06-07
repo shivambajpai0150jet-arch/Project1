@@ -10,41 +10,40 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffb199, #ffc3a0, #ff9a9e);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
+      background: radial-gradient(circle at center, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 200% 200%;
+      animation: moveBG 10s infinite alternate;
     }
 
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+    @keyframes moveBG {
+      0% {background-position: left top;}
+      100% {background-position: right bottom;}
     }
 
     h1 {
       font-size: 4em;
+      font-family: 'Trebuchet MS', sans-serif;
       text-align: center;
-      color: white;
-      font-family: 'Arial Black', sans-serif;
+      color: #fff;
     }
 
-    /* Look 1: Shadowed 3D */
+    /* Look 1: 3D Shadow */
     .look1 {
-      text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+      text-shadow: 4px 4px 8px rgba(0,0,0,0.7);
     }
 
     /* Look 2: Neon Glow */
     .look2 {
       color: #fff;
-      text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+      text-shadow: 0 0 10px #00f, 0 0 20px #0ff, 0 0 30px #0ff;
     }
 
-    /* Look 3: Embossed Metallic */
+    /* Look 3: Metallic Gradient */
     .look3 {
-      background: linear-gradient(45deg, #d4af37, #ffd700, #ffec8b);
+      background: linear-gradient(45deg, #ffd700, #c0c0c0, #ff4500);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     }
   </style>
 </head>
@@ -53,3 +52,4 @@
   <h1 class="look1">Welcome My World</h1>
 </body>
 </html>
+
