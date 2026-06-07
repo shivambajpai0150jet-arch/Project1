@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Repository</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            text-align: center;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        h1 {
-            color: #24292e;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Welcome My World</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffb199, #ffc3a0, #ff9a9e);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      font-size: 4em;
+      text-align: center;
+      color: white;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    /* Look 1: Shadowed 3D */
+    .look1 {
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    }
+
+    /* Look 2: Neon Glow */
+    .look2 {
+      color: #fff;
+      text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+    }
+
+    /* Look 3: Embossed Metallic */
+    .look3 {
+      background: linear-gradient(45deg, #d4af37, #ffd700, #ffec8b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 <body>
-
-    <div class="card">
-        <h1>Hello, World!</h1>
-        <p>This is my first Repo HTML file.</p>
-        <p>Welcome to my GitHub journey!</p>
-    </div>
-
+  <!-- Change class to look1, look2, or look3 -->
+  <h1 class="look1">Welcome My World</h1>
 </body>
 </html>
